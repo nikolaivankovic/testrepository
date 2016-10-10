@@ -11,14 +11,28 @@ public class DashboardPage {
 
     WebDriver driver;
 
-    public DashboardPage(WebDriver driver){this.driver = driver;}
+    public DashboardPage(WebDriver driver) {
+        this.driver = driver;
+    }
 
-    @FindBy (xpath = ".//*[@id='tc_tl_ci']")
+    @FindBy(xpath = ".//*[@id='tc_tl_ci']")
     protected WebElement clockInButton;
 
-    @FindBy (xpath = ".//*[@id='tc_tl_co']")
+    @FindBy(xpath = ".//*[@id='tc_tl_co']")
     protected WebElement clockOutButton;
 
-    @FindBy (css = ".dash_notification_widget>h1")
+    @FindBy(css = ".dash_notification_widget>h1")
     protected WebElement dashWidget;
+
+    public WebElement getClockInButton() {
+        return clockInButton;
+    }
+
+    public WebElement getClockOutButton() {
+        return clockOutButton;
+    }
+
+    public String getDashWidgetValue() {
+        return dashWidget.getText();
+    }
 }

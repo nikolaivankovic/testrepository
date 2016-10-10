@@ -1,28 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite name="NSuite" verbose="5" parallel="false" thread-count="1">
-    <test name="firefox">
+<suite name="NSuite" verbose="5" parallel="methods" thread-count="3">
+    <test name="logInTest">
         <parameter name="browser" value="firefox"/>
         <classes>
             <class name="TestCases.LogInPageTest"></class>
         </classes>
     </test>
-    <!--&lt;!&ndash;<test name="edge">&ndash;&gt;-->
-        <!--&lt;!&ndash;<parameter name="browser" value="edge"/>&ndash;&gt;-->
-        <!--&lt;!&ndash;<classes>&ndash;&gt;-->
-            <!--&lt;!&ndash;<class name="TestCases.LogInPageTest"></class>&ndash;&gt;-->
-        <!--&lt;!&ndash;</classes>&ndash;&gt;-->
-    <!--&lt;!&ndash;</test>&ndash;&gt;-->
-    <!--&lt;!&ndash;<test name="chrome">&ndash;&gt;-->
-        <!--&lt;!&ndash;<parameter name="browser" value="chrome"/>&ndash;&gt;-->
-        <!--&lt;!&ndash;<classes>&ndash;&gt;-->
-            <!--&lt;!&ndash;<class name="TestCases.LogInPageTest"></class>&ndash;&gt;-->
-        <!--&lt;!&ndash;</classes>&ndash;&gt;-->
-    <!--&lt;!&ndash;</test>&ndash;&gt;-->
-    <!--&lt;!&ndash;<test name="internet explorer">&ndash;&gt;-->
-        <!--&lt;!&ndash;<parameter name="browser" value="ie"/>&ndash;&gt;-->
-        <!--&lt;!&ndash;<classes>&ndash;&gt;-->
-            <!--&lt;!&ndash;<class name="TestCases.LogInPageTest"></class>&ndash;&gt;-->
-        <!--&lt;!&ndash;</classes>&ndash;&gt;-->
-    <!--</test>-->
+    <test name="clockInClockOutTest">
+        <parameter name="browser" value="chrome"/>
+        <classes>
+            <class name="TestCases.ClockInClockOutTest"></class>
+        </classes>
+    </test>
+    <test name="addEmployeeTest">
+        <parameter name="browser" value="ie"/>
+        <classes>
+            <class name="TestCases.AddEmployeeTest"></class>
+        </classes>
+    </test>
+
 </suite>

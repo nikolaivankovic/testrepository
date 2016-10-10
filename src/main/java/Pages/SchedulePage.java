@@ -10,20 +10,43 @@ import org.openqa.selenium.support.FindBy;
 public class SchedulePage {
 
     WebDriver driver;
-    public SchedulePage(WebDriver driver){this.driver=driver;}
 
-    @FindBy (css = ".addEmployee")
+    public SchedulePage(WebDriver driver) {
+        this.driver = driver;
+    }
+
+    @FindBy(css = ".addEmployee")
     protected WebElement addEmployeeButton;
 
-    @FindBy (id = "fname_1")
+    @FindBy(id = "fname_1")
     protected WebElement employeeFirstName;
 
-    @FindBy (id = "lname_1")
+    @FindBy(id = "lname_1")
     protected WebElement employeeLastName;
 
-    @FindBy (id = "email_1")
+    @FindBy(id = "email_1")
     protected WebElement employeeEmail;
 
-    @FindBy (id = "add_employee_btn")
+    @FindBy(id = "add_employee_btn")
     protected WebElement addEmployeeFormButton;
+
+    public WebElement getAddEmployeeButton() {
+        return addEmployeeButton;
+    }
+
+    public WebElement getEmployeeFirstName() {
+        return employeeFirstName;
+    }
+
+    public WebElement getEmployeeLastName() {
+        return employeeLastName;
+    }
+
+    public WebElement getEmployeeEmail() {
+        return employeeEmail;
+    }
+
+    public WebElement getAddEmployeeFormButton() {
+        return addEmployeeFormButton;
+    }
 }
