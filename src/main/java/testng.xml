@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="NSuite" verbose="5" parallel="methods" thread-count="3">
+    <test name="logInTest">
+        <parameter name="browser" value="firefox"/>
+        <classes>
+            <class name="TestCases.LogInPageTest"></class>
+        </classes>
+    </test>
+    <test name="clockInClockOutTest">
+        <parameter name="browser" value="chrome"/>
+        <classes>
+            <class name="TestCases.ClockInClockOutTest"></class>
+        </classes>
+    </test>
+    <test name="addEmployeeTest">
+        <parameter name="browser" value="ie"/>
+        <classes>
+            <class name="TestCases.AddEmployeeTest"></class>
+        </classes>
+    </test>
+
+</suite>
