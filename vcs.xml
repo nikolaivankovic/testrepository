@@ -10,6 +10,18 @@
           <option name="url" value="https://github.com/nikolaivankovic/testsuite.git" />
           <option name="userName" value="" />
         </UrlAndUserName>
+        <UrlAndUserName>
+          <option name="url" value="https://github.com/Deployinc/ray-robot.git" />
+          <option name="userName" value="" />
+        </UrlAndUserName>
+        <UrlAndUserName>
+          <option name="url" value="git@github.com:Deployinc/ray-robot.git" />
+          <option name="userName" value="" />
+        </UrlAndUserName>
+        <UrlAndUserName>
+          <option name="url" value="https://nivankovic:nivankovic@deployinc.com/github.com/Deployinc/ray-robot.git" />
+          <option name="userName" value="" />
+        </UrlAndUserName>
       </list>
     </option>
     <option name="cloneParentDir" value="C:\Users\Nikola\IdeaProjects" />
